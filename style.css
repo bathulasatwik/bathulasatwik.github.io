@@ -99,6 +99,7 @@ a:hover {
   width: 100%;
   aspect-ratio: 1 / 1;
   object-fit: cover;
+  object-position: center 30%;
   border-radius: 14px;
   border: 2px solid #35597d;
   display: block;

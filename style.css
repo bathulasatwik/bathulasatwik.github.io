@@ -1,12 +1,9 @@
-/* ---------------- GLOBAL ---------------- */
 :root {
   --bg: #061426;
   --bg2: #081a30;
-
   --text: #f5f8ff;
   --muted: #cbd6e6;
   --accent: #7aa2ff;
-
   --line: #5f789a;
 }
 
@@ -23,101 +20,89 @@ body {
   line-height: 1.7;
 }
 
-/* ---------------- NAVBAR ---------------- */
+/* NAVBAR */
 .navbar {
   position: sticky;
   top: 0;
   background: #03101f;
   border-bottom: 1px solid rgba(255,255,255,0.08);
-  z-index: 100;
 }
 
 .nav-inner {
   max-width: 1100px;
   margin: auto;
   padding: 18px 20px;
-
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-/* 🔥 FIXED BRAND COLOR */
 .brand a {
-  color: #7c3aed;
+  color: #9d6cff;
   text-decoration: none;
-  font-weight: 600;
   font-size: 22px;
+  font-weight: 600;
 }
 
 .nav-links a {
   color: #dbe6ff;
   margin-left: 24px;
   text-decoration: none;
-  font-size: 16px;
 }
 
 .nav-links a:hover {
   color: white;
 }
 
-/* ---------------- PAGE ---------------- */
+/* PAGE */
 .page {
   max-width: 1100px;
   margin: auto;
   padding: 40px 20px;
 }
 
-/* ---------------- LAYOUT ---------------- */
+/* LAYOUT */
 .layout {
-  display: flex;
-  gap: 40px;
-  align-items: flex-start;
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 50px;
 }
 
-/* ---------------- SIDEBAR ---------------- */
+/* SIDEBAR */
 .sidebar-card {
-  width: 260px;
   background: rgba(255,255,255,0.03);
   border-radius: 16px;
   padding: 20px;
-  border: 1px solid rgba(255,255,255,0.06);
 }
 
-/* PROFILE IMAGE FIX */
 .profile-image {
   width: 100%;
   border-radius: 12px;
-  margin-bottom: 16px;
-  display: block;
+  margin-bottom: 15px;
 }
 
 .sidebar-name {
-  font-size: 20px;
+  font-size: 22px;
   font-weight: 600;
-  margin-bottom: 6px;
+  margin-bottom: 5px;
 }
 
 .sidebar-role {
   font-size: 14px;
-  color: var(--muted);
+  color: var(--accent);
   margin-bottom: 20px;
 }
 
-/* SIDEBAR LINKS */
 .sidebar-links {
-  display: flex;
-  flex-direction: column;
+  margin-top: 10px;
 }
 
 .sidebar-link {
   display: flex;
-  align-items: center;
   gap: 10px;
   padding: 10px 0;
   color: var(--muted);
   text-decoration: none;
-  font-size: 14px;
 }
 
 .sidebar-link:hover {
@@ -125,107 +110,53 @@ body {
 }
 
 .icon {
-  width: 18px;
-  text-align: center;
-  color: var(--accent);
+  width: 20px;
 }
 
-/* ---------------- MAIN CONTENT ---------------- */
-.main {
-  flex: 1;
-}
-
-/* ---------------- INTRO TEXT ---------------- */
-.intro-text {
-  margin-top: 20px;
-}
-
+/* MAIN TEXT */
 .intro-text p {
   font-size: 20px;
   color: #d6e2f2;
   margin-bottom: 26px;
-  line-height: 1.8;
 }
 
-/* first paragraph stronger */
 .intro-text p:first-child {
   color: #f0f6ff;
   font-weight: 500;
 }
 
-/* ---------------- SECTION TITLE ---------------- */
-.section-title {
+/* SECTION */
+.section-block {
   margin-top: 60px;
-  margin-bottom: 20px;
 }
 
-/* Title + line style (your version) */
-.section-title h2 {
-  font-size: 34px;
-  font-weight: 700;
-  margin-bottom: 10px;
+.section-header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }
 
-.section-title .line {
+.section-header h2 {
+  font-size: 32px;
+}
+
+.line {
+  flex: 1;
   height: 1px;
-  width: 100%;
   background: var(--line);
 }
 
-/* ---------------- SECTION CONTENT ---------------- */
-.section-content {
-  margin-top: 20px;
+/* EDUCATION */
+.education-item {
+  margin-top: 25px;
 }
 
-/* ---------------- EDUCATION ---------------- */
-.edu-entry {
-  margin-bottom: 30px;
-}
-
-.edu-degree {
+.education-degree {
   font-size: 20px;
   font-weight: 600;
-  color: #ffffff;
 }
 
-.edu-school {
+.education-school {
   font-size: 18px;
   color: #b8c7dd;
-  font-style: italic;
-}
-
-/* ---------------- FOOTER ---------------- */
-footer {
-  margin-top: 60px;
-  padding: 20px;
-  text-align: center;
-  color: #9fb2cc;
-  font-size: 14px;
-}
-
-.footer-line {
-  height: 1px;
-  background: var(--line);
-  margin-bottom: 20px;
-}
-
-.footer-links a {
-  margin: 0 10px;
-  color: #bcd1ff;
-  text-decoration: none;
-}
-
-.footer-links a:hover {
-  color: white;
-}
-
-/* ---------------- RESPONSIVE ---------------- */
-@media (max-width: 900px) {
-  .layout {
-    flex-direction: column;
-  }
-
-  .sidebar-card {
-    width: 100%;
-  }
 }

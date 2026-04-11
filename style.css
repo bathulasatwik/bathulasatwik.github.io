@@ -104,20 +104,14 @@ a:hover {
   border: 2px solid #35597d;
   display: block;
   background: #0a1627;
-}
-
-.sidebar-name {
-  margin: 16px 0 6px;
-  font-size: 1.55rem;
-  font-weight: 700;
-  text-align: center;
+  margin-bottom: 8px;
 }
 
 .sidebar-role {
   text-align: center;
   color: var(--accent2);
   font-weight: 600;
-  margin: 16px 0 18px;
+  margin: 20px 0 18px;
   font-size: 1.2rem;
 }
 
@@ -155,12 +149,22 @@ a:hover {
   padding-top: 4px;
 }
 
-.intro-text p,
+.intro-text {
+  max-width: 1100px;
+}
+
+.intro-text p {
+  color: var(--muted);
+  line-height: 1.6;
+  font-size: 1.1rem;
+  margin: 0 0 16px;
+}
+
 .section-content p,
 .section-content li {
   color: var(--muted);
   line-height: 1.55;
-  font-size: 1.1rem;
+  font-size: 0.95rem;
   margin: 0 0 14px;
 }
 
@@ -207,6 +211,13 @@ a:hover {
   margin-bottom: 0;
 }
 
+.edu-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 12px;
+}
+
 .edu-degree,
 .project-title,
 .pub-title {
@@ -215,6 +226,17 @@ a:hover {
   margin-bottom: 5px;
   font-weight: 600;
   line-height: 1.45;
+}
+
+.edu-degree {
+  flex: 1;
+}
+
+.edu-date {
+  font-size: 0.95rem;
+  color: var(--accent2);
+  white-space: nowrap;
+  font-weight: 500;
 }
 
 .edu-school,
@@ -291,6 +313,16 @@ footer {
 
   .section-title h2 {
     font-size: 1.8rem;
+  }
+
+  .edu-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+  }
+
+  .edu-date {
+    white-space: normal;
   }
 
   .pdf-frame {

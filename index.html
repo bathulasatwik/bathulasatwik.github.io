@@ -1,70 +1,94 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Satwik Bathula</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <nav class="navbar">
+    <div class="nav-inner">
+      <div class="brand"><a href="index.html">Satwik Bathula</a></div>
+      <div class="nav-links">
+        <a href="about.html">About</a>
+        <a href="research.html">Research</a>
+        <a href="projects.html">Projects</a>
+        <a href="cv.html">CV</a>
+      </div>
+    </div>
+  </nav>
 
-<div class="navbar">
-  <div class="nav-inner">
-    <div class="brand">Satwik Bathula</div>
-    <div class="nav-links">
-      <a href="index.html">About</a>
+  <main class="page">
+    <div class="layout">
+      <aside class="sidebar-card">
+        <img src="profile.jpg" alt="Satwik Bathula" class="profile-image">
+
+        <div class="sidebar-name">Satwik Bathula</div>
+        <div class="sidebar-role">Machine Learning Theory Researcher</div>
+
+        <div class="sidebar-links">
+          <a class="sidebar-link" href="https://www.usc.edu/" target="_blank">
+            <span class="icon">⌂</span>
+            <span>Los Angeles, CA</span>
+          </a>
+          <a class="sidebar-link" href="mailto:bathulasatwik111@gmail.com">
+            <span class="icon">@</span>
+            <span>Email</span>
+          </a>
+          <a class="sidebar-link" href="https://github.com/bathulasatwik" target="_blank">
+            <span class="icon">⌘</span>
+            <span>GitHub</span>
+          </a>
+          <a class="sidebar-link" href="https://scholar.google.com/citations?user=mRguQBAAAAAJ&hl=en" target="_blank">
+            <span class="icon">G</span>
+            <span>Google Scholar</span>
+          </a>
+          <a class="sidebar-link" href="https://www.linkedin.com/in/satwik-bathula-02950623b/" target="_blank">
+            <span class="icon">in</span>
+            <span>LinkedIn</span>
+          </a>
+          <a class="sidebar-link" href="Satwik_Bathula_CV.pdf" target="_blank">
+            <span class="icon">⇩</span>
+            <span>CV</span>
+          </a>
+        </div>
+      </aside>
+
+      <section class="main">
+        <h1 class="page-title">Welcome</h1>
+
+        <div class="content-card">
+          <p class="hero-text">
+            I am an MS student in Electrical and Computer Engineering at the University of Southern California,
+            specializing in Machine Learning and Data Science. My research interests lie in machine learning theory,
+            geometric deep learning, and representation geometry in neural architectures.
+          </p>
+
+          <p class="hero-text">
+            My current work focuses on geometric expressivity, curvature, and architectural structure in neural networks,
+            with particular interest in attention, multiplicative gating, and information-geometric viewpoints on learned representations.
+          </p>
+
+          <div class="tag-row">
+            <div class="tag">Machine Learning Theory</div>
+            <div class="tag">Geometric Deep Learning</div>
+            <div class="tag">Representation Geometry</div>
+            <div class="tag">Information Geometry</div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-line"></div>
+    <div class="footer-links">
+      <a href="about.html">About</a>
       <a href="research.html">Research</a>
       <a href="projects.html">Projects</a>
       <a href="cv.html">CV</a>
     </div>
-  </div>
-</div>
-
-<div class="page">
-  <div class="layout">
-
-    <div class="sidebar">
-      <img src="profile.jpg" class="profile">
-      <div class="name">Satwik Bathula</div>
-      <div class="role">Machine Learning Theory Researcher</div>
-
-      <div class="links">
-        <a href="mailto:bathulasatwik111@gmail.com">Email</a>
-        <a href="https://github.com/bathulasatwik">GitHub</a>
-        <a href="https://scholar.google.com/citations?user=mRguQBAAAAAJ&hl=en">Google Scholar</a>
-        <a href="https://www.linkedin.com/in/satwik-bathula-02950623b/">LinkedIn</a>
-        <a href="Satwik_Bathula_CV.pdf">CV</a>
-      </div>
-    </div>
-
-    <div>
-      <h1>About</h1>
-
-      <div class="card">
-        <p>
-          I am an MS student in Electrical and Computer Engineering at USC,
-          specializing in Machine Learning and Data Science.
-        </p>
-
-        <p>
-          My research focuses on machine learning theory, geometric deep learning,
-          and representation geometry in neural networks.
-        </p>
-
-        <p>
-          I am particularly interested in curvature, geometric expressivity,
-          and architectural structure such as attention and gating.
-        </p>
-
-        <div>
-          <span class="tag">ML Theory</span>
-          <span class="tag">Geometry</span>
-          <span class="tag">Deep Learning</span>
-        </div>
-      </div>
-
-    </div>
-
-  </div>
-</div>
-
+  </footer>
 </body>
 </html>

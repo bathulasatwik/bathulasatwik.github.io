@@ -1,98 +1,221 @@
 :root {
   --bg: #07111f;
+  --bg2: #081321;
   --panel: #0d1b2e;
   --panel2: #12233a;
   --text: #e8eef9;
   --muted: #b9c4d4;
   --line: #28415f;
   --accent: #7cc6ff;
+  --accent2: #9fd3ff;
+  --shadow: rgba(0, 0, 0, 0.35);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
-  background: var(--bg);
+  font-family: Inter, Arial, sans-serif;
+  background: linear-gradient(180deg, var(--bg) 0%, var(--bg2) 100%);
   color: var(--text);
 }
 
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
 .navbar {
-  background: #06101c;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: rgba(3, 10, 18, 0.94);
+  backdrop-filter: blur(10px);
   border-bottom: 1px solid #10233b;
 }
 
 .nav-inner {
-  max-width: 1100px;
-  margin: auto;
-  padding: 18px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px 28px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
-.brand {
-  font-size: 1.5rem;
-  font-weight: bold;
-}
-
-.nav-links a {
-  margin-left: 20px;
-  color: white;
+.brand a {
+  color: #f4f7fb;
+  font-size: 1.8rem;
+  font-weight: 700;
   text-decoration: none;
 }
 
+.nav-links {
+  display: flex;
+  gap: 28px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.nav-links a {
+  color: #edf3fb;
+  font-size: 1.02rem;
+}
+
 .page {
-  max-width: 1100px;
-  margin: auto;
-  padding: 40px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 44px 28px 70px;
 }
 
 .layout {
   display: grid;
-  grid-template-columns: 300px 1fr;
-  gap: 30px;
+  grid-template-columns: 320px 1fr;
+  gap: 36px;
+  align-items: start;
 }
 
-.sidebar {
-  background: var(--panel);
-  padding: 20px;
-  border-radius: 10px;
+.sidebar-card,
+.content-card {
+  background: linear-gradient(180deg, var(--panel) 0%, var(--panel2) 100%);
+  border: 1px solid #17304b;
+  border-radius: 18px;
+  box-shadow: 0 10px 30px var(--shadow);
 }
 
-.profile {
+.sidebar-card {
+  padding: 18px;
+  position: sticky;
+  top: 95px;
+}
+
+.profile-image {
   width: 100%;
-  border-radius: 10px;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 14px;
+  border: 2px solid #35597d;
+  display: block;
+  background: #0a1627;
 }
 
-.name {
+.sidebar-name {
+  margin: 16px 0 6px;
+  font-size: 1.55rem;
+  font-weight: 700;
   text-align: center;
-  margin-top: 10px;
-  font-weight: bold;
 }
 
-.role {
+.sidebar-role {
+  text-align: center;
+  color: var(--accent2);
+  font-weight: 600;
+  margin-bottom: 18px;
+  font-size: 1rem;
+}
+
+.sidebar-links {
+  margin-top: 12px;
+  border: 1px solid #264261;
+  border-radius: 14px;
+  overflow: hidden;
+}
+
+.sidebar-link {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 16px;
+  border-bottom: 1px solid #243f5d;
+  background: rgba(255, 255, 255, 0.01);
+  color: #e7eef8;
+}
+
+.sidebar-link:last-child {
+  border-bottom: none;
+}
+
+.sidebar-link span.icon {
+  width: 22px;
   text-align: center;
   color: var(--accent);
+  font-weight: 700;
+  flex-shrink: 0;
 }
 
-.links a {
-  display: block;
-  margin: 10px 0;
-  color: white;
+.main {
+  min-width: 0;
 }
 
-.card {
-  background: var(--panel2);
-  padding: 20px;
-  border-radius: 10px;
+.page-title {
+  margin: 0 0 18px;
+  font-size: 2.4rem;
+  color: #f8fbff;
 }
 
-h1 {
-  margin-top: 0;
+.hero-text,
+.content-card p {
+  color: var(--muted);
+  line-height: 1.85;
+  font-size: 1.03rem;
 }
 
-.tag {
-  display: inline-block;
-  margin: 5px;
-  padding: 5px 10px;
-  border: 1px solid #295175;
-  border-radius: 20px;
+.content-card {
+  padding: 24px 26px;
+}
+
+.section-heading {
+  margin: 0 0 16px;
+  font-size: 1.35rem;
+  color: #f6f9fd;
+}
+
+.footer-line {
+  height: 1px;
+  background: var(--line);
+  margin: 26px 0 18px;
+}
+
+footer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 8px 28px 40px;
+}
+
+.footer-links {
+  display: flex;
+  gap: 22px;
+  flex-wrap: wrap;
+  color: var(--muted);
+  font-size: 1rem;
+}
+
+@media (max-width: 900px) {
+  .layout {
+    grid-template-columns: 1fr;
+  }
+
+  .sidebar-card {
+    position: static;
+  }
+
+  .nav-inner {
+    flex-direction: column;
+    gap: 14px;
+    align-items: flex-start;
+  }
+
+  .page-title {
+    font-size: 2rem;
+  }
 }

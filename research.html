@@ -5,10 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Research | Satwik Bathula</title>
   <link rel="stylesheet" href="style.css" />
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
 <body>
-
   <nav class="navbar">
     <div class="nav-inner">
       <div class="brand"><a href="index.html">Satwik Bathula</a></div>
@@ -22,65 +20,73 @@
   </nav>
 
   <main class="page">
-    <section class="main full-width">
+    <section class="main research-main">
+      <h1 class="research-page-title">Research</h1>
 
-      <h1 class="page-title">Research</h1>
-
-      <div class="content-card">
-        <p class="hero-text">
-          My current work studies neural representations through mathematical and geometric lenses.
-          I am interested in how architectural structure constrains what learning systems can represent,
-          and in how principled analysis can reveal both expressive power and fundamental limits.
-        </p>
-
-        <p class="hero-text">
-          Broadly, I care about theoretical questions in machine learning, especially those connected to
-          geometry, expressivity, and representation structure.
-        </p>
-      </div>
-
-      <div class="section-block">
+      <div class="section-block research-top-block">
         <div class="section-title">
-          <h2>Current Direction</h2>
+          <h2>Current Research</h2>
           <div class="line"></div>
         </div>
 
-        <div class="content-card">
-          <div class="pub-entry">
-            <div class="pub-title">Representation Geometry and Expressivity</div>
-            <div class="pub-desc">
-              I am particularly interested in questions about curvature, structural limits, and how
-              architectural mechanisms shape the intrinsic geometry of learned representations.
-            </div>
-          </div>
+        <div class="section-content research-content">
+          <p>
+            A non-exhaustive overview of research directions I am currently interested in:
+          </p>
 
-          <div class="pub-entry">
-            <div class="pub-title">Mathematical Foundations of Learning Systems</div>
-            <div class="pub-desc">
-              A recurring theme in my work is to characterize what a learning system can achieve in principle,
-              rather than only how to optimize it empirically.
-            </div>
-          </div>
+          <ul class="research-list level-1">
+            <li>
+              <strong>Representation Geometry</strong>
+              <ul class="research-list level-2">
+                <li>Study of geometric structure in learned representations</li>
+                <li>Curvature as a lens for understanding expressivity</li>
+                <li>Structural constraints induced by architectural design</li>
+                <li>Intrinsic and extrinsic geometry of representation spaces</li>
+              </ul>
+            </li>
+
+            <li>
+              <strong>Architectural Expressivity</strong>
+              <ul class="research-list level-2">
+                <li>Comparative expressivity across neural architectures</li>
+                <li>Role of gating, depth, and composition in expanding function classes</li>
+                <li>Structural differences between attention, MLPs, and residual networks</li>
+                <li>Minimal architectural requirements for realizing complex representations</li>
+              </ul>
+            </li>
+
+            <li>
+              <strong>Depth and Structural Complexity</strong>
+              <ul class="research-list level-2">
+                <li>Expressivity gains induced by depth</li>
+                <li>Higher-order structure in deep representations</li>
+                <li>Limits of shallow architectures under geometric constraints</li>
+                <li>Interaction between depth and representation structure</li>
+              </ul>
+            </li>
+
+            <li>
+              <strong>Theoretical Limits of Learning Systems</strong>
+              <ul class="research-list level-2">
+                <li>Architecture-induced limits independent of optimization</li>
+                <li>Separation between representational capacity and trainability</li>
+                <li>Fundamental constraints on what learning systems can realize</li>
+                <li>Toward principled notions of expressivity beyond parameter count</li>
+              </ul>
+            </li>
+
+            <li>
+              <strong>Foundations and Meta-Research</strong>
+              <ul class="research-list level-2">
+                <li>Meaningful measures of expressivity for modern learning systems</li>
+                <li>Role of abstraction and toy models in understanding learning systems</li>
+                <li>Bridging formal theory with empirical phenomena</li>
+                <li>Toward mathematically grounded frameworks for modern machine learning</li>
+              </ul>
+            </li>
+          </ul>
         </div>
       </div>
-
-      <div class="section-block">
-        <div class="section-title">
-          <h2>Publications</h2>
-          <div class="line"></div>
-        </div>
-
-        <div class="content-card">
-          <div class="pub-entry">
-            <div class="pub-title">Research Profiles</div>
-            <div class="pub-desc">
-              For the most up-to-date list of publications, preprints, and citations, please see my
-              <a href="https://scholar.google.com/citations?user=mRguQBAAAAAJ&hl=en" target="_blank">Google Scholar profile</a>.
-            </div>
-          </div>
-        </div>
-      </div>
-
     </section>
   </main>
 
@@ -93,6 +99,5 @@
       <a href="cv.html">CV</a>
     </div>
   </footer>
-
 </body>
 </html>

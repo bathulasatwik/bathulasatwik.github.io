@@ -81,7 +81,7 @@ a:hover {
 .layout {
   display: grid;
   grid-template-columns: 320px 1fr;
-  gap: 36px;
+  gap: 48px;
   align-items: start;
 }
 
@@ -93,14 +93,6 @@ a:hover {
   padding: 18px;
   position: sticky;
   top: 95px;
-}
-
-.content-card {
-  background: transparent;
-  border: none;
-  border-radius: 0;
-  box-shadow: none;
-  padding: 0;
 }
 
 .profile-image {
@@ -159,29 +151,32 @@ a:hover {
 
 .main {
   min-width: 0;
+  padding-top: 4px;
 }
 
-.page-title {
-  margin: 0 0 26px;
-  font-size: 2.6rem;
-  font-weight: 700;
-  color: #f8fbff;
-}
-
-.hero-text,
-.content-card p,
-.content-card li {
+.intro-text p,
+.section-content p,
+.section-content li {
   color: var(--muted);
   line-height: 1.7;
   font-size: 1.02rem;
   margin: 0 0 22px;
 }
 
+.intro-text p:last-child,
+.section-content p:last-child {
+  margin-bottom: 0;
+}
+
+.section-block {
+  margin-top: 56px;
+}
+
 .section-title {
   display: flex;
   align-items: center;
   gap: 18px;
-  margin: 0 0 28px;
+  margin: 0 0 26px;
 }
 
 .section-title h2 {
@@ -199,15 +194,10 @@ a:hover {
   opacity: 0.9;
 }
 
-.edu-block,
-.section-block {
-  margin-top: 34px;
-}
-
 .edu-entry,
 .project-entry,
 .pub-entry {
-  margin-bottom: 28px;
+  margin-bottom: 30px;
 }
 
 .edu-entry:last-child,
@@ -223,6 +213,7 @@ a:hover {
   color: #e9f0fa;
   margin-bottom: 6px;
   font-weight: 600;
+  line-height: 1.5;
 }
 
 .edu-school,
@@ -284,6 +275,7 @@ footer {
 @media (max-width: 900px) {
   .layout {
     grid-template-columns: 1fr;
+    gap: 32px;
   }
 
   .sidebar-card {
@@ -294,10 +286,6 @@ footer {
     flex-direction: column;
     gap: 14px;
     align-items: flex-start;
-  }
-
-  .page-title {
-    font-size: 2rem;
   }
 
   .section-title h2 {

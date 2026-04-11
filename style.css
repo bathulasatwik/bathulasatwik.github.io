@@ -75,7 +75,7 @@ a:hover {
 .page {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 44px 28px 70px;
+  padding: 36px 28px 60px;
 }
 
 .layout {
@@ -116,8 +116,8 @@ a:hover {
   text-align: center;
   color: var(--accent2);
   font-weight: 600;
-  margin-bottom: 18px;
-  font-size: 1rem;
+  margin: 16px 0 18px;
+  font-size: 1.2rem;
 }
 
 .sidebar-links {
@@ -158,9 +158,9 @@ a:hover {
 .section-content p,
 .section-content li {
   color: var(--muted);
-  line-height: 1.7;
-  font-size: 1.02rem;
-  margin: 0 0 22px;
+  line-height: 1.55;
+  font-size: 0.95rem;
+  margin: 0 0 14px;
 }
 
 .intro-text p:last-child,
@@ -169,14 +169,14 @@ a:hover {
 }
 
 .section-block {
-  margin-top: 56px;
+  margin-top: 40px;
 }
 
 .section-title {
   display: flex;
   align-items: center;
-  gap: 18px;
-  margin: 0 0 26px;
+  gap: 14px;
+  margin: 0 0 18px;
 }
 
 .section-title h2 {
@@ -197,7 +197,7 @@ a:hover {
 .edu-entry,
 .project-entry,
 .pub-entry {
-  margin-bottom: 30px;
+  margin-bottom: 24px;
 }
 
 .edu-entry:last-child,
@@ -209,19 +209,19 @@ a:hover {
 .edu-degree,
 .project-title,
 .pub-title {
-  font-size: 1.05rem;
+  font-size: 1rem;
   color: #e9f0fa;
-  margin-bottom: 6px;
+  margin-bottom: 5px;
   font-weight: 600;
-  line-height: 1.5;
+  line-height: 1.45;
 }
 
 .edu-school,
 .project-desc,
 .pub-desc {
-  font-size: 1rem;
+  font-size: 0.96rem;
   color: var(--muted);
-  line-height: 1.6;
+  line-height: 1.5;
 }
 
 .edu-school {

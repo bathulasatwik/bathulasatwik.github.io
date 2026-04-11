@@ -1,39 +1,95 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Projects</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects | Satwik Bathula</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <nav class="navbar">
+    <div class="nav-inner">
+      <div class="brand"><a href="index.html">Satwik Bathula</a></div>
+      <div class="nav-links">
+        <a href="index.html">About</a>
+        <a href="research.html">Research</a>
+        <a href="projects.html">Projects</a>
+        <a href="cv.html">CV</a>
+      </div>
+    </div>
+  </nav>
 
-<div class="navbar">
-  <div class="nav-inner">
-    <div class="brand">Satwik Bathula</div>
-    <div class="nav-links">
+  <main class="page">
+    <div class="layout">
+      <aside class="sidebar-card">
+        <img src="profile.jpg" alt="Satwik Bathula" class="profile-image">
+
+        <div class="sidebar-name">Satwik Bathula</div>
+        <div class="sidebar-role">Machine Learning Theory Researcher</div>
+
+        <div class="sidebar-links">
+          <a class="sidebar-link" href="https://github.com/bathulasatwik" target="_blank">
+            <span class="icon">⌘</span>
+            <span>GitHub</span>
+          </a>
+          <a class="sidebar-link" href="Satwik_Bathula_CV.pdf" target="_blank">
+            <span class="icon">⇩</span>
+            <span>CV</span>
+          </a>
+        </div>
+      </aside>
+
+      <section class="main">
+        <h1 class="page-title">Projects</h1>
+
+        <div class="content-card">
+          <p class="hero-text">
+            Selected projects spanning theoretical machine learning, interpretability, and applied systems.
+          </p>
+        </div>
+
+        <div class="section-block">
+          <div class="section-title">
+            <h2>Selected Projects</h2>
+            <div class="line"></div>
+          </div>
+
+          <div class="content-card">
+            <div class="project-entry">
+              <div class="project-title">Gating Enables Curvature: A Geometric Expressivity Gap in Attention</div>
+              <div class="project-desc">
+                A theory-driven project studying how ungated attention induces structurally flat representation
+                families under affine mixture geometry, while multiplicative gating enables richer curved manifolds.
+              </div>
+            </div>
+
+            <div class="project-entry">
+              <div class="project-title">Sensitivity vs Sufficiency in Mechanistic Interpretability</div>
+              <div class="project-desc">
+                A project examining probing, causal interventions, and representation-level evidence in interpretability workflows.
+              </div>
+            </div>
+
+            <div class="project-entry">
+              <div class="project-title">Graph-based Recommender System with Custom Similarity</div>
+              <div class="project-desc">
+                A recommender system project based on graph structure and a custom similarity mechanism.
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-line"></div>
+    <div class="footer-links">
       <a href="index.html">About</a>
       <a href="research.html">Research</a>
       <a href="projects.html">Projects</a>
       <a href="cv.html">CV</a>
     </div>
-  </div>
-</div>
-
-<div class="page">
-  <h1>Projects</h1>
-
-  <div class="card">
-    <h3>Gating Enables Curvature</h3>
-    <p>Geometric expressivity gap in attention.</p>
-  </div>
-
-  <br>
-
-  <div class="card">
-    <h3>Sensitivity vs Sufficiency</h3>
-    <p>Interpretability and probing methods.</p>
-  </div>
-
-</div>
-
+  </footer>
 </body>
 </html>

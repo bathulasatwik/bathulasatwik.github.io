@@ -1,0 +1,98 @@
+:root {
+  --bg: #07111f;
+  --panel: #0d1b2e;
+  --panel2: #12233a;
+  --text: #e8eef9;
+  --muted: #b9c4d4;
+  --line: #28415f;
+  --accent: #7cc6ff;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+
+.navbar {
+  background: #06101c;
+  border-bottom: 1px solid #10233b;
+}
+
+.nav-inner {
+  max-width: 1100px;
+  margin: auto;
+  padding: 18px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-links a {
+  margin-left: 20px;
+  color: white;
+  text-decoration: none;
+}
+
+.page {
+  max-width: 1100px;
+  margin: auto;
+  padding: 40px 20px;
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 30px;
+}
+
+.sidebar {
+  background: var(--panel);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.profile {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.name {
+  text-align: center;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.role {
+  text-align: center;
+  color: var(--accent);
+}
+
+.links a {
+  display: block;
+  margin: 10px 0;
+  color: white;
+}
+
+.card {
+  background: var(--panel2);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+h1 {
+  margin-top: 0;
+}
+
+.tag {
+  display: inline-block;
+  margin: 5px;
+  padding: 5px 10px;
+  border: 1px solid #295175;
+  border-radius: 20px;
+}

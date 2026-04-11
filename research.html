@@ -1,51 +1,118 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Research</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Research | Satwik Bathula</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
 <body>
+  <nav class="navbar">
+    <div class="nav-inner">
+      <div class="brand"><a href="index.html">Satwik Bathula</a></div>
+      <div class="nav-links">
+        <a href="index.html">About</a>
+        <a href="research.html">Research</a>
+        <a href="projects.html">Projects</a>
+        <a href="cv.html">CV</a>
+      </div>
+    </div>
+  </nav>
 
-<div class="navbar">
-  <div class="nav-inner">
-    <div class="brand">Satwik Bathula</div>
-    <div class="nav-links">
+  <main class="page">
+    <div class="layout">
+      <aside class="sidebar-card">
+        <img src="profile.jpg" alt="Satwik Bathula" class="profile-image">
+
+        <div class="sidebar-name">Satwik Bathula</div>
+        <div class="sidebar-role">Machine Learning Theory Researcher</div>
+
+        <div class="sidebar-links">
+          <a class="sidebar-link" href="https://scholar.google.com/citations?user=mRguQBAAAAAJ&hl=en" target="_blank">
+            <span class="icon">G</span>
+            <span>Google Scholar</span>
+          </a>
+          <a class="sidebar-link" href="https://github.com/bathulasatwik" target="_blank">
+            <span class="icon">⌘</span>
+            <span>GitHub</span>
+          </a>
+          <a class="sidebar-link" href="Satwik_Bathula_CV.pdf" target="_blank">
+            <span class="icon">⇩</span>
+            <span>CV</span>
+          </a>
+        </div>
+      </aside>
+
+      <section class="main">
+        <h1 class="page-title">Research</h1>
+
+        <div class="content-card">
+          <p class="hero-text">
+            My current work studies neural representations through mathematical and geometric lenses.
+            I am interested in how architectural structure constrains what learning systems can represent,
+            and in how principled analysis can reveal both expressive power and fundamental limits.
+          </p>
+
+          <p class="hero-text">
+            Broadly, I care about theoretical questions in machine learning, especially those connected to
+            geometry, expressivity, and representation structure.
+          </p>
+        </div>
+
+        <div class="section-block">
+          <div class="section-title">
+            <h2>Current Direction</h2>
+            <div class="line"></div>
+          </div>
+
+          <div class="content-card">
+            <div class="pub-entry">
+              <div class="pub-title">Representation Geometry and Expressivity</div>
+              <div class="pub-desc">
+                I am particularly interested in questions about curvature, structural limits, and how
+                architectural mechanisms shape the intrinsic geometry of learned representations.
+              </div>
+            </div>
+
+            <div class="pub-entry">
+              <div class="pub-title">Mathematical Foundations of Learning Systems</div>
+              <div class="pub-desc">
+                A recurring theme in my work is to characterize what a learning system can achieve in principle,
+                rather than only how to optimize it empirically.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="section-block">
+          <div class="section-title">
+            <h2>Publications</h2>
+            <div class="line"></div>
+          </div>
+
+          <div class="content-card">
+            <div class="pub-entry">
+              <div class="pub-title">Research Profiles</div>
+              <div class="pub-desc">
+                For the most up-to-date list of publications, preprints, and citations, please see my
+                <a href="https://scholar.google.com/citations?user=mRguQBAAAAAJ&hl=en" target="_blank">Google Scholar profile</a>.
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-line"></div>
+    <div class="footer-links">
       <a href="index.html">About</a>
       <a href="research.html">Research</a>
       <a href="projects.html">Projects</a>
       <a href="cv.html">CV</a>
     </div>
-  </div>
-</div>
-
-<div class="page">
-  <h1>Research</h1>
-
-  <div class="card">
-    <p>
-      I study neural representations using geometric and theoretical perspectives.
-    </p>
-
-    <ul>
-      <li>Machine learning theory</li>
-      <li>Geometric expressivity</li>
-      <li>Curvature in neural networks</li>
-    </ul>
-  </div>
-
-  <br>
-
-  <div class="card">
-    <h3>Publications</h3>
-    <p>
-      See my Google Scholar:
-      <a href="https://scholar.google.com/citations?user=mRguQBAAAAAJ&hl=en">
-        link
-      </a>
-    </p>
-  </div>
-
-</div>
-
+  </footer>
 </body>
 </html>

@@ -608,3 +608,23 @@ body.light-mode .project-card-desc {
 body.light-mode .project-card-links a {
   color: #2563eb !important;
 }
+
+
+/* ---------- LIGHT MODE FIXES: RESEARCH PAGE ---------- */
+
+body.light-mode .research-page-title {
+  color: #111827 !important;
+}
+
+body.light-mode .research-content p {
+  color: #374151 !important;
+}
+
+body.light-mode .research-list li {
+  color: #374151 !important;
+}
+
+body.light-mode .research-list.level-1 strong,
+body.light-mode .research-list strong {
+  color: #111827 !important;
+}

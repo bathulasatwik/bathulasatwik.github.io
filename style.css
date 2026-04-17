@@ -519,3 +519,27 @@ body.light-mode .line {
   background: #9ca3af;
 }
 
+
+/* ---------- FINAL LIGHT MODE FIXES FOR CURRENT CLASSES ---------- */
+
+body.light-mode .section-title h2 {
+  color: #111827 !important;
+}
+
+body.light-mode .edu-degree {
+  color: #111827 !important;
+}
+
+body.light-mode .edu-school {
+  color: #4b5563 !important;
+}
+
+body.light-mode .edu-date {
+  color: #2563eb !important;
+  font-weight: 600;
+}
+
+body.light-mode .line {
+  background: #9ca3af !important;
+}
+

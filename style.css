@@ -580,3 +580,31 @@ body.light-mode .theme-toggle {
   text-shadow: none;  /* remove yellow glow */
 }
 
+
+/* ---------- LIGHT MODE FIXES: PROJECTS PAGE ---------- */
+
+body.light-mode .projects-page-title {
+  color: #111827 !important;
+}
+
+body.light-mode .projects-intro p {
+  color: #374151 !important;
+}
+
+body.light-mode .project-card {
+  background: rgba(255, 255, 255, 0.85) !important;
+  border: 1px solid rgba(0, 0, 0, 0.08) !important;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.08) !important;
+}
+
+body.light-mode .project-card-title {
+  color: #111827 !important;
+}
+
+body.light-mode .project-card-desc {
+  color: #4b5563 !important;
+}
+
+body.light-mode .project-card-links a {
+  color: #2563eb !important;
+}

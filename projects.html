@@ -86,5 +86,28 @@
       <a href="projects.html">Projects</a>
     </div>
   </footer>
+  <script>
+const toggleBtn = document.getElementById("theme-toggle");
+const body = document.body;
+
+function setTheme(theme) {
+  if (theme === "light") {
+    body.classList.add("light-mode");
+    toggleBtn.textContent = "☾";  // moon
+  } else {
+    body.classList.remove("light-mode");
+    toggleBtn.textContent = "☀";  // sun
+  }
+  localStorage.setItem("theme", theme);
+}
+
+const savedTheme = localStorage.getItem("theme") || "dark";
+setTheme(savedTheme);
+
+toggleBtn.addEventListener("click", () => {
+  const newTheme = body.classList.contains("light-mode") ? "dark" : "light";
+  setTheme(newTheme);
+});
+</script>
 </body>
 </html>

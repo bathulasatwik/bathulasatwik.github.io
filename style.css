@@ -58,16 +58,20 @@ a:hover {
   color: #f4f7fb;
   font-size: 1.8rem;
   font-weight: 700;
+  line-height: 1;
 }
 
 .nav-links {
   display: flex;
-  gap: 28px;
+  align-items: center;
+  gap: 26px;
 }
 
 .nav-links a {
   color: #edf3fb;
   font-size: 1.02rem;
+  display: flex;
+  align-items: center;
 }
 
 /* PAGE */

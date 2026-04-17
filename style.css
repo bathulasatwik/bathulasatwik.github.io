@@ -381,3 +381,66 @@ footer {
     padding: 18px 18px;
   }
 }
+
+/* ================= THEME TOGGLE ================= */
+.theme-toggle {
+  margin-left: 20px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid var(--accent);
+  background: transparent;
+  color: var(--accent);
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.theme-toggle:hover {
+  background: rgba(122,162,255,0.15);
+}
+
+/* ================= LIGHT MODE ================= */
+body.light-mode {
+  --bg: #f3f4f6;
+  --bg2: #e5e7eb;
+  --text: #111827;
+  --muted: #374151;
+  --accent: #2563eb;
+  --line: #94a3b8;
+
+  background: linear-gradient(180deg, var(--bg), var(--bg2));
+  color: var(--text);
+}
+
+body.light-mode .navbar {
+  background: #222;
+}
+
+body.light-mode .brand a {
+  color: #ffffff;
+}
+
+body.light-mode .nav-links a {
+  color: #f3f4f6;
+}
+
+body.light-mode .sidebar-card {
+  background: rgba(255,255,255,0.8);
+}
+
+body.light-mode .intro-text p {
+  color: #374151;
+}
+
+body.light-mode .intro-text p:first-child {
+  color: #111827;
+}
+
+body.light-mode .education-degree {
+  color: #111827;
+}
+
+body.light-mode .education-school {
+  color: #6b7280;
+}
+

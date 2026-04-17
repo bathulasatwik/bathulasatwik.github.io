@@ -494,3 +494,28 @@ body.light-mode .profile-image {
   border: 1px solid rgba(0, 0, 0, 0.12);
 }
 
+/* ---------- FIX: LIGHT MODE EDUCATION VISIBILITY ---------- */
+
+body.light-mode .section-header h2 {
+  color: #111827;   /* dark text */
+}
+
+body.light-mode .education-degree {
+  color: #111827;   /* strong dark */
+}
+
+body.light-mode .education-school {
+  color: #4b5563;   /* medium gray */
+}
+
+/* FIX YEARS VISIBILITY */
+body.light-mode .education-years {
+  color: #2563eb;   /* stronger blue */
+  font-weight: 500;
+}
+
+/* ensure divider is visible */
+body.light-mode .line {
+  background: #9ca3af;
+}
+

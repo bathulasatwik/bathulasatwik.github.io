@@ -444,3 +444,53 @@ body.light-mode .education-school {
   color: #6b7280;
 }
 
+
+/* ---------- LIGHT MODE FIXES ---------- */
+
+body.light-mode .sidebar-name {
+  color: #111827;
+}
+
+body.light-mode .sidebar-role {
+  color: #2563eb;
+}
+
+body.light-mode .sidebar-link {
+  color: #374151;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+body.light-mode .sidebar-link:hover {
+  color: #111827;
+  background: rgba(0, 0, 0, 0.03);
+}
+
+body.light-mode .icon {
+  color: #2563eb;
+}
+
+body.light-mode .section-header h2 {
+  color: #111827;
+}
+
+body.light-mode .education-degree {
+  color: #111827;
+}
+
+body.light-mode .education-school {
+  color: #4b5563;
+}
+
+body.light-mode .line {
+  background: #94a3b8;
+}
+
+body.light-mode .sidebar-card {
+  background: rgba(255, 255, 255, 0.75);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+body.light-mode .profile-image {
+  border: 1px solid rgba(0, 0, 0, 0.12);
+}
+

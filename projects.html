@@ -93,10 +93,10 @@ const body = document.body;
 function setTheme(theme) {
   if (theme === "light") {
     body.classList.add("light-mode");
-    toggleBtn.textContent = "☾";  // moon
+    toggleBtn.textContent = "☀";  // moon
   } else {
     body.classList.remove("light-mode");
-    toggleBtn.textContent = "☀";  // sun
+    toggleBtn.textContent = "☾";  // sun
   }
   localStorage.setItem("theme", theme);
 }

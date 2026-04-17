@@ -88,10 +88,14 @@ a:hover {
   border-radius: 50%;
   border: 2px solid var(--accent);
   background: transparent;
-  color: #facc15 !important;
+  color: #facc15;
   text-shadow: 0 0 6px rgba(250, 204, 21, 0.6);
   font-size: 16px;
   cursor: pointer;
+}
+
+.theme-toggle:hover {
+  background: rgba(122, 162, 255, 0.15);
 }
 
 /* PAGE */
@@ -567,5 +571,12 @@ body.light-mode .edu-date {
 
 body.light-mode .line {
   background: #9ca3af !important;
+}
+
+/* ---------- THEME TOGGLE LIGHT MODE FIX ---------- */
+
+body.light-mode .theme-toggle {
+  color: #ffffff;     /* moon white */
+  text-shadow: none;  /* remove yellow glow */
 }
 
